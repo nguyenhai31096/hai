@@ -2,6 +2,21 @@
     <head>
         <link href="Main.css" rel="stylesheet"/>
         <script src="jquery-1.10.2.min.js"></script>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v4.0'
+            });
+          };
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+       </script>
     </head>
     <body>
         <div id="bg">
@@ -25,6 +40,17 @@
                     <div id="handle"></div>
                 </div>
             </div>
+        </div>
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+          attribution=setup_tool
+          page_id="113863183302547"
+          theme_color="#0084FF"
+          ref="7"
+          greeting_dialog_display="show"
+          greeting_dialog_delay=0
+          logged_in_greeting="Hi! How can we help you?"
+          logged_out_greeting="Hi! How can we help you?">
         </div>
     </body>
     <script type="text/javascript">
