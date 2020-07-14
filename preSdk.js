@@ -1,4 +1,4 @@
-const SdkModule = (function() {
+window.SdkModule = (function() {
   function init() {
     console.log("init")
   }
