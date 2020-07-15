@@ -48,6 +48,10 @@ window.SdkModule = (function() {
     })
     .catch(err => console.log(err))
   }
+  
+  return {
+    init 
+  }
 })();
 
 (function() {
