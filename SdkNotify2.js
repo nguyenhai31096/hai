@@ -2,7 +2,8 @@ window.SdkModule = (function() {
   
   const headers = {
     'Accept': 'application/json',
-    "Access-Control-Allow-Origin": null
+    "Access-Control-Allow-Origin": "null",
+    "Access-Control-Allow-Credentials": true
   };
   
   function getHostname() {
