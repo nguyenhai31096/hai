@@ -1,5 +1,9 @@
 window.SdkModule = (function() {
-
+  
+  const headers = {
+    'Accept': 'application/json'
+  };
+  
   function getHostname() {
     return location.hostname !== "localhost" && location.hostname !== "local.docker" ? "http://api.susa.snappy.vn/api" : `http://${location.hostname}:6800/api`;
   }
