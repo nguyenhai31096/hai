@@ -3,7 +3,7 @@ window.SdkModule = (function() {
   const headers = {
     'Accept': 'application/json',
     "Access-Control-Allow-Credentials": "true",
-    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": null,
     "Access-Control-Allow-Methods": "GET",
     "Access-Control-Allow-Headers": "Origin"
   };
