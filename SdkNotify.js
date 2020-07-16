@@ -44,9 +44,9 @@ window.SdkModule = (function() {
     return httpGet(url)
     .then(data => {
       if (data.success) {
-        console.log(data)
+        return data
       }else {
-        console.log("false")
+        console.log("Cannot get notify")
       }
     })
     .catch(err => console.log(err))
