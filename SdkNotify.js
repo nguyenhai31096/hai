@@ -40,7 +40,6 @@ window.SdkModule = (function() {
   }
 
   function init() {
-    console.log("init")
     let url = `${getHostname()}/notify/get_notify`
     return httpGet(url)
     .then(data => {
